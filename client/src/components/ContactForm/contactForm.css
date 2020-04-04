@@ -1,0 +1,43 @@
+.contactFormTitle {
+  text-align: center;
+}
+
+.contactForm {
+  width: 100%;
+}
+
+.contactFormLabel {
+  font-size: 16px;
+  margin-top: 20px;
+  color: rgb(95, 95, 95);
+}
+
+.contactFormInput {
+  font-size: 16px;
+  font-family: Source Sans Pro, sans-serif;
+  font-weight: 400;
+}
+
+.contactFormTextarea {
+  font-weight: 400;
+  -webkit-appearance: none;
+  background: #fff;
+  border-radius: 4px;
+  border: 1px solid #c9d2d3;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  outline: 0;
+  font-family: Source Sans Pro, sans-serif;
+}
+
+#contactFormButton {
+  text-align: center;
+}
+
+#contactFormButton button {
+  padding: 10px;
+  margin: 10px;
+  width: 20%;
+  font-size: 17px;
+}

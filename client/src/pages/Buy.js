@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container } from '../components/Grid/Grid';
+// import { Container } from '../components/Grid/Grid';
 import NavBar from '../components/NavBar/NavBar';
 import buyHomeImg from '../assets/images/buyHome.png';
 import BuyForm from '../components/BuyForm/index';
@@ -22,6 +22,23 @@ class Buy extends Component {
     this.setState({ [name]: value })
   }
 
+  submitFormHandler = event => {
+    event.preventDefault();
+    alert("Workig");
+
+    this.setState({
+      property: "",
+      location: "",
+      price: "",
+      numOfBathrooms: "",
+      date: "",
+      description: "",
+      name: "",
+      email: "",
+      phoneNumber: ""
+    });
+  }
+
   render() {
     const styles = {
       imgStyle: {
@@ -39,10 +56,13 @@ class Buy extends Component {
     }
 
     return (
-      <Container>
+      <section>
         <NavBar />
         <div className="intro">
-          <img src={buyHomeImg} style={styles.imgStyle} />
+          <img
+            src={buyHomeImg}
+            style={styles.imgStyle}
+            alt="Buy home img step by step" />
         </div>
 
         <article style={styles.articleStyle}>
@@ -62,12 +82,11 @@ class Buy extends Component {
           description={this.state.description}
           name={this.state.name}
           email={this.state.email}
-          phoneNumber={this.state.phonenumber}
-          submitBtn={this.submitFormHandlerBtn}
+          phoneNumber={this.state.phoneNumber}
           handleChange={this.handleInputChange}
-          submitBtn={this.submitHandleBtn}
+          handleSubmit={this.submitFormHandler}
         />
-      </Container>
+      </section>
     )
   }
 }
