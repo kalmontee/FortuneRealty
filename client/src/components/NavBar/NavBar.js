@@ -4,7 +4,7 @@ import './navbar.css'
 
 const NavBar = () => {
   return (
-    <nav className={window.location.pathname === "/" ? "home-navbar" : "navbar"}>
+    <header className={window.location.pathname === "/" ? "home-navbar" : "navbar-pages"}>
       <Link to="/" className={window.location.pathname === "/" ? "active navbar-title" : "navbarLink navbar-title"}>
         Fortune Realty
       </Link>
@@ -28,7 +28,7 @@ const NavBar = () => {
       <Link to="/contact" className={window.location.pathname === "/contact" ? "active" : "navbarLink"}>
         Contact
       </Link>
-    </nav>
+    </header>
   )
 }
 

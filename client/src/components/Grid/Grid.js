@@ -8,6 +8,6 @@ const homeContainerStyle = {
   backgroundSize: 'cover'
 };
 
-export const HomeContainer = ({children}) => <div className={`container`} style={homeContainerStyle}>{children}</div>;
+export const HomeContainer = ({children}) => <div className={`home-container`} style={homeContainerStyle}>{children}</div>;
 
-export const Container = ({fluid, children}) => <div className={`container`}>{children}</div>;
+export const Container = ({fluid, children}) => <div className={`container-sections`}>{children}</div>;

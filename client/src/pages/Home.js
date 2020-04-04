@@ -7,8 +7,7 @@ class Home extends Component {
     return (
       <HomeContainer>
         <NavBar />
-        {/* <img src={img} alt="home buyer" /> */}
-        {/* <h1>Hello World</h1> */}
+        <h1>Hello World</h1>
       </HomeContainer>
     )
   }

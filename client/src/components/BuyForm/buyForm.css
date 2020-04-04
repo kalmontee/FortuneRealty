@@ -1,0 +1,13 @@
+.form-builder {
+  padding-top: 20px
+}
+
+.form-group {
+  margin-bottom: 2rem;
+}
+
+.labelFormGroup {
+  font-size: 17px;
+  color: rgb(112, 112, 112);
+  color: #343a40;
+}
