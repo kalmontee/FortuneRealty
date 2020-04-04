@@ -6,13 +6,13 @@ import Buy from './pages/Buy';
 import Sell from './pages/Sell';
 import Testimonials from './pages/Testimonials';
 import Contact from './pages/Contact';
+import NoMatch from './pages/NoMatch';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <Router>
-      <div className="App">
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/about-us" component={About} />
@@ -20,8 +20,8 @@ function App() {
           <Route exact path="/sell" component={Sell} />
           <Route exact path="/testimonials" component={Testimonials} />
           <Route exact path="/contact" component={Contact} />
+          <Route component={NoMatch} />
         </Switch>
-      </div>
     </Router>
   );
 }
