@@ -35,7 +35,7 @@
   text-align: center;
 }
 
-#contactFormButton button {
+#contactFormButton input {
   padding: 10px;
   margin: 10px;
   width: 20%;

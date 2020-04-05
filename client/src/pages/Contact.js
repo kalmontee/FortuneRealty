@@ -18,7 +18,10 @@ class Contact extends Component {
 
   handleFormSubmit = (event) => {
     event.preventDefault();
-    alert("Working");
+    console.log("It works");
+    
+    // Set a modal pop-up - letting the user know the form has been submitted.
+
 
     // Set the form empty after user submits the form.
     this.setState({
@@ -27,7 +30,7 @@ class Contact extends Component {
       phoneNumber: "",
       email: "",
       comments: ""
-    })
+    });
   }
 
   render() {

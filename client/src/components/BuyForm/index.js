@@ -49,7 +49,7 @@ const BuyForm = (props) => {
               className="form-control"
               placeholder=""
               name="numOfBathrooms"
-              value={props.numOfbathrooms}
+              value={props.numOfBathrooms}
               onChange={props.handleChange} />
           </div>
 
@@ -108,12 +108,11 @@ const BuyForm = (props) => {
               onChange={props.handleChange} />
           </div>
 
-          <button
+          <input
             type="submit"
+            value="Submit"
             className="btn btn-primary"
-          >
-            Submit
-          </button>
+          />
         </form>
         <br />
       </section>

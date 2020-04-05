@@ -67,18 +67,16 @@ const ContactForm = (props) => {
                 value={props.comments}
                 onChange={props.handleChange}
                 className="contactFormTextarea">
-
               </textarea>
             </div>
           </div>
 
           <div id="contactFormButton">
-            <button
+            <input
               type="submit"
+              value="Submit"
               className="btn btn-secondary"
-            >
-              Send
-            </button>
+            />
           </div>
         </form>
       </Container>
