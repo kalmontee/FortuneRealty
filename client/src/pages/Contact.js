@@ -4,8 +4,7 @@ import ContactForm from '../components/ContactForm/index';
 
 class Contact extends Component {
   state = {
-    firstName: "",
-    lastName: "",
+    fullName: "",
     phoneNumber: "",
     email: "",
     comments: ""
@@ -25,8 +24,7 @@ class Contact extends Component {
 
     // Set the form empty after user submits the form.
     this.setState({
-      firstName: "",
-      lastName: "",
+      fullName: "",
       phoneNumber: "",
       email: "",
       comments: ""
@@ -38,8 +36,7 @@ class Contact extends Component {
       <div>
         <NavBar />
         <ContactForm
-          firstName={this.state.firstName}
-          lastName={this.state.lastName}
+          fullName={this.state.fullName}
           phoneNumber={this.state.phoneNumber}
           email={this.state.email}
           comments={this.state.comments}
