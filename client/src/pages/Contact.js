@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import NavBar from '../components/NavBar/NavBar';
 import ContactForm from '../components/ContactForm/index';
 
 class Contact extends Component {
@@ -33,8 +32,7 @@ class Contact extends Component {
 
   render() {
     return (
-      <div>
-        <NavBar />
+      <>
         <ContactForm
           fullName={this.state.fullName}
           phoneNumber={this.state.phoneNumber}
@@ -43,7 +41,7 @@ class Contact extends Component {
           handleChange={this.handleChangeInput}
           handleSubmit={this.handleFormSubmit}
         />
-      </div>
+      </>
     )
   }
 }
