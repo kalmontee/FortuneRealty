@@ -8,8 +8,15 @@ const homeContainerStyle = {
   backgroundSize: 'cover'
 };
 
-export const HomeContainer = ({children}) => <div className={`home-container`} style={homeContainerStyle}>{children}</div>;
+const aboutStyle = {
+  background: "#f5f6fa",
+  padding: '20px 0'
+}
 
-export const Container = ({fluid, children}) => <main className={`row${fluid ? "-fluid" : ""}`, `container`}>{children}</main>;
+export const HomeContainer = ({ children }) => <div className={`home-container`} style={homeContainerStyle}>{children}</div>;
+
+export const Container = ({ fluid, children }) => <main className={`row${fluid ? "-fluid" : ""}`, `container`}>{children}</main>;
+
+export const AboutContainer = ({ children }) => <section style={aboutStyle} >{children}</section>;
 
 export const Row = ({ fluid, flex, children }) => <div className={`row${fluid ? "-fluid" : ""}`, `row${flex ? " flex" : ""}`}>{children}</div>
