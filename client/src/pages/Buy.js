@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Container } from '../components/Grid/Grid';
-import NavBar from '../components/NavBar/NavBar';
 import buyHomeImg from '../assets/images/buyHome.png';
 import BuyForm from '../components/BuyForm/index';
 
@@ -57,7 +56,6 @@ class Buy extends Component {
 
     return (
       <section>
-        <NavBar />
         <div className="intro">
           <img
             src={buyHomeImg}
